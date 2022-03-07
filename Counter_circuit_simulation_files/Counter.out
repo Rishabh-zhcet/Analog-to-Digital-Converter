@@ -1,0 +1,1113 @@
+
+No compatibility mode selected!
+
+
+Circuit: * /home/vrishabh70086/desktop/counter/counter.cir
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v2: no DC value, transient time 0 value used
+Warning: v1: no DC value, transient time 0 value used
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net-_r3-pad1_                                0
+o3                                           0
+net-_r1-pad1_                                0
+reset                                        0
+clk                                          0
+o2                                           0
+o1                                           0
+o0                                           0
+v2#branch                                    0
+v1#branch                                    0
+a3#branch_1_0                                0
+a3#branch_1_1                                0
+a3#branch_1_2                                0
+a3#branch_1_3                                0
+
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 0
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=9
+
+No. of Data Rows : 787
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+binary raw file "/home/vrishabh70086/Desktop/Counter/Counter.raw"
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v2: no DC value, transient time 0 value used
+Warning: v1: no DC value, transient time 0 value used
+No. of Data Columns : 15     
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net-_r3-pad1_                                0
+o3                                           0
+net-_r1-pad1_                                0
+reset                                        0
+clk                                          0
+o2                                           0
+o1                                           0
+o0                                           0
+v2#branch                                    0
+v1#branch                                    0
+a3#branch_1_0                                0
+a3#branch_1_1                                0
+a3#branch_1_2                                0
+a3#branch_1_3                                0
+
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=1
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=1
+out=0
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=0
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=0
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=1
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=1
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=2
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=2
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=3
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=3
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=4
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=4
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=5
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=5
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=6
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=6
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=7
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=7
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=8
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=0
+rst=0
+out=8
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=1
+rst=0
+out=9
+=============rishabh_counter : New Iteration===========
+Instance : 1
+
+Inside foo before eval.....
+clk=1
+rst=0
+out=9
+
+Inside foo after eval.....
+clk=0
+rst=0
+out=9
+
+No. of Data Rows : 787
+
+Total analysis time (seconds) = 0.017001
+
+Total CPU time (seconds) = 0.064 
+
+Total DRAM available = 257855.305 MB.
+DRAM currently available = 238013.012 MB.
+Maximum ngspice program size =   88.965 MB.
+Current ngspice program size =   11.434 MB.
+
+Shared ngspice pages =    9.508 MB.
+Text (code) pages =    6.285 MB.
+Stack = 0 bytes.
+Library pages =    2.551 MB.
+
