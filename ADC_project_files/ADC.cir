@@ -1,0 +1,38 @@
+* /home/vrishabh70086/Desktop/ADC/ADC.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Mon 07 Mar 2022 05:46:20 PM UTC
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U4-Pad5_ Net-_U4-Pad6_ rishabh_counter		
+U6  gated_clk Net-_U5-Pad5_ Net-_U4-Pad1_ d_and		
+X1  ? Vin staircase_op Net-_X1-Pad4_ ? Comp Net-_X1-Pad7_ ? lm_741		
+X2  ? Net-_R3-Pad2_ GND Net-_X1-Pad4_ ? staircase_op Net-_X1-Pad7_ ? lm_741		
+R4  Net-_R3-Pad2_ o3 1k		
+R5  Net-_R3-Pad2_ o2 2k		
+R6  Net-_R3-Pad2_ o1 4k		
+R7  Net-_R3-Pad2_ o0 8k		
+R3  staircase_op Net-_R3-Pad2_ 1.6k		
+U7  Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U4-Pad5_ Net-_U4-Pad6_ o3 o2 o1 o0 dac_bridge_4		
+v4  GND Net-_X1-Pad4_ 15		
+v5  Net-_X1-Pad7_ GND 15		
+U5  Net-_R1-Pad2_ Comp reset gated_clk Net-_U5-Pad5_ Net-_U4-Pad2_ adc_bridge_3		
+v1  clk GND pulse		
+v2  reset GND pulse		
+v3  GND Vin 9.8		
+R1  clk Net-_R1-Pad2_ 1k		
+R2  Net-_R1-Pad2_ GND 1k		
+U1  clk plot_v1		
+U2  reset plot_v1		
+U3  Vin plot_v1		
+U8  o3 plot_v1		
+U9  o2 plot_v1		
+U10  o1 plot_v1		
+U11  o0 plot_v1		
+U12  staircase_op plot_v1		
+U13  Comp plot_v1		
+U14  gated_clk plot_v1		
+
+.end

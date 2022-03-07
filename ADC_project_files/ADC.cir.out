@@ -1,0 +1,54 @@
+* /home/vrishabh70086/desktop/adc/adc.cir
+
+.include lm_741.sub
+* u4  net-_u4-pad1_ net-_u4-pad2_ net-_u4-pad3_ net-_u4-pad4_ net-_u4-pad5_ net-_u4-pad6_ rishabh_counter
+* u6  gated_clk net-_u5-pad5_ net-_u4-pad1_ d_and
+x1 ? vin staircase_op net-_x1-pad4_ ? comp net-_x1-pad7_ ? lm_741
+x2 ? net-_r3-pad2_ gnd net-_x1-pad4_ ? staircase_op net-_x1-pad7_ ? lm_741
+r4  net-_r3-pad2_ o3 1k
+r5  net-_r3-pad2_ o2 2k
+r6  net-_r3-pad2_ o1 4k
+r7  net-_r3-pad2_ o0 8k
+r3  staircase_op net-_r3-pad2_ 1.6k
+* u7  net-_u4-pad3_ net-_u4-pad4_ net-_u4-pad5_ net-_u4-pad6_ o3 o2 o1 o0 dac_bridge_4
+v4  gnd net-_x1-pad4_ 15
+v5  net-_x1-pad7_ gnd 15
+* u5  net-_r1-pad2_ comp reset gated_clk net-_u5-pad5_ net-_u4-pad2_ adc_bridge_3
+v1  clk gnd pulse(0 5 0.1m 0.1m 0.1m 1 2)
+v2  reset gnd pulse(0 5 0.1m 0.1m 0.1m 1 1000)
+v3  gnd vin 9.8
+r1  clk net-_r1-pad2_ 1k
+r2  net-_r1-pad2_ gnd 1k
+* u1  clk plot_v1
+* u2  reset plot_v1
+* u3  vin plot_v1
+* u8  o3 plot_v1
+* u9  o2 plot_v1
+* u10  o1 plot_v1
+* u11  o0 plot_v1
+* u12  staircase_op plot_v1
+* u13  comp plot_v1
+* u14  gated_clk plot_v1
+a1 [net-_u4-pad1_ ] [net-_u4-pad2_ ] [net-_u4-pad3_ net-_u4-pad4_ net-_u4-pad5_ net-_u4-pad6_ ] u4
+a2 [gated_clk net-_u5-pad5_ ] net-_u4-pad1_ u6
+a3 [net-_u4-pad3_ net-_u4-pad4_ net-_u4-pad5_ net-_u4-pad6_ ] [o3 o2 o1 o0 ] u7
+a4 [net-_r1-pad2_ comp reset ] [gated_clk net-_u5-pad5_ net-_u4-pad2_ ] u5
+* Schematic Name:                             rishabh_counter, NgSpice Name: rishabh_counter
+.model u4 rishabh_counter(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             d_and, NgSpice Name: d_and
+.model u6 d_and(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 ) 
+* Schematic Name:                             dac_bridge_4, NgSpice Name: dac_bridge
+.model u7 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_3, NgSpice Name: adc_bridge
+.model u5 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 0.1e-00 40e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot  v(o0)  v(o1) +10 v(o2) +20 v(o3) +30 v(staircase_op) +50  v(vin) +50 v(clk) +60 v(reset) +70
+
+.endc
+.end
