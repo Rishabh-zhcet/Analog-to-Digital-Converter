@@ -13,15 +13,15 @@ This repository presents the mixed signal design of a Counter Type/Ramp Type ADC
 * [Methodology](#Methodology)
     * [Design of 4 Bit BWR (Binary Weighted Resistor) type DAC](#Design-of-4-Bit-BWR-(Binary-Weighted-Resistor)-type-DAC)
 * [Schematic](#Schematic)
-* [Verilog Code For Counter](#Verilog-Code-For-Counter)
+* [Verilog Code For Counter in Makerchip](#Verilog-Code-For-Counter-in-Makerchip)
 * [Counter Simulation in Makerchip](#Counter-Simulation-in-Makerchip)
-* [Generation of Counter Model using Ngveri Tab](#Generation-of-Counter-Model-using-Ngveri-Tab)
-* [Steps to Run Simulation of Project](#Steps-to-Run-Simulation-of-Project)
 * [Project Simulation Plots](#Project-Simulation-Plots)
    * [NgSpice Plot](#NgSpice-Plot)
    * [Gaw Plot](#Gaw-Plot)
 * [Generated Netlist](#Generated-Netlist)
 * [Result](#Result)
+* [Generation of Counter Model using Ngveri Tab](#Generation-of-Counter-Model-using-Ngveri-Tab)
+* [Steps to Run Simulation of Project](#Steps-to-Run-Simulation-of-Project)
 * [Reference](#Reference)
 * [Acknowledgment](#Acknowledgment)
 * [Author](#Author)
@@ -119,3 +119,184 @@ In counter-type ADC, a low signal on reset initiates the A/D conversion. As conv
 <b>Fig:4 Schematic of Couter/Ramp Type ADC(Analog to Digital Converter)</b></br>
 </p>
 
+# Verilog Code For Counter in Makerchip
+
+```
+\TLV_version 1d: tl-x.org
+\SV
+/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/    /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/   /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/    
+
+//Your Verilog/System Verilog Code Starts Here:
+module Rishabh_counter(
+input clk,
+   input rst,
+   output reg [3:0] out
+);      		
+                   	          	
+// student code here
+always@(posedge clk) begin
+if(rst) 
+out<=0;
+else
+out<=out+1;
+end
+endmodule 
+
+//Top Module Code Starts here:
+	module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
+		logic  rst;//input
+		logic  [3:0] out;//output
+//The $random() can be replaced if user wants to assign values
+		assign rst = 0;
+		Rishabh_counter Rishabh_counter(.clk(clk), .rst(rst), .out(out));
+	
+\TLV
+//Add \TLV here if desired                                     
+\SV
+endmodule
+```
+
+# Counter Simulation in Makerchip
+
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157283491-9b422b9a-11f5-4d52-982f-b1c82d46a595.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+# Project Simulation Plots
+
+### NgSpice Plot
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157292185-ca1e473b-9e0b-4f4a-9aa8-e616e73552d3.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157292387-b19b8252-5dd5-4898-aa66-96b8f6b7e69c.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157292573-af4313a6-c14e-402f-8f31-933289c04faa.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157292672-53848402-4c53-4fa8-a2fd-0c575fb4a718.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+
+
+### Gaw Plot
+
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157295526-b164e999-4408-4958-882f-60562df43a3a.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+</p>
+
+# Generated Netlist
+
+```
+* /home/vrishabh70086/Desktop/ADC/ADC.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Mon 07 Mar 2022 05:46:20 PM UTC
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U4-Pad5_ Net-_U4-Pad6_ rishabh_counter		
+U6  gated_clk Net-_U5-Pad5_ Net-_U4-Pad1_ d_and		
+X1  ? Vin staircase_op Net-_X1-Pad4_ ? Comp Net-_X1-Pad7_ ? lm_741		
+X2  ? Net-_R3-Pad2_ GND Net-_X1-Pad4_ ? staircase_op Net-_X1-Pad7_ ? lm_741		
+R4  Net-_R3-Pad2_ o3 1k		
+R5  Net-_R3-Pad2_ o2 2k		
+R6  Net-_R3-Pad2_ o1 4k		
+R7  Net-_R3-Pad2_ o0 8k		
+R3  staircase_op Net-_R3-Pad2_ 1.6k		
+U7  Net-_U4-Pad3_ Net-_U4-Pad4_ Net-_U4-Pad5_ Net-_U4-Pad6_ o3 o2 o1 o0 dac_bridge_4		
+v4  GND Net-_X1-Pad4_ 15		
+v5  Net-_X1-Pad7_ GND 15		
+U5  Net-_R1-Pad2_ Comp reset gated_clk Net-_U5-Pad5_ Net-_U4-Pad2_ adc_bridge_3		
+v1  clk GND pulse		
+v2  reset GND pulse		
+v3  GND Vin 9.8		
+R1  clk Net-_R1-Pad2_ 1k		
+R2  Net-_R1-Pad2_ GND 1k		
+U1  clk plot_v1		
+U2  reset plot_v1		
+U3  Vin plot_v1		
+U8  o3 plot_v1		
+U9  o2 plot_v1		
+U10  o1 plot_v1		
+U11  o0 plot_v1		
+U12  staircase_op plot_v1		
+U13  Comp plot_v1		
+U14  gated_clk plot_v1		
+
+.end
+```
+
+# Generation of Counter Model using Ngveri Tab
+
+1. Open eSim
+2. Run NgVeri-Makerchip
+3. Add top level verilog file in Makerchip Tab
+4. Click on NgVeri tab
+5. Add dependency files
+6. Click on Run Verilog to NgSpice Converter
+7. Debug if any errors
+8. Model created successfully
+
+# Steps to Run Simulation of Project
+
+1. Open a new terminal
+2. Clone this project using the following command:
+3. git clone https://github.com/Rishabh-zhcet/Analog-to-Digital-Converter.git
+4. Change directory:
+5. cd ADC_project_files
+6. Run ngspice:
+7. ngspice ADC.cir.out
+8. To run the project in eSim:
+9. Run eSim
+10. Load the project
+11. Open eeSchema
+
+
+# Reference
+
+# Acknowledgment
+
+# Author
