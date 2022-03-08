@@ -71,7 +71,7 @@ https://www.veripool.org/verilator/
 
 <p align="center" width="100%">
 
-   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157244403-f671f3cb-c73f-40b5-b94b-fdc5db8d8e6f.png">
+   <img width="70%" src="https://user-images.githubusercontent.com/65393666/157244403-f671f3cb-c73f-40b5-b94b-fdc5db8d8e6f.png">
    
 </p>
 
@@ -97,4 +97,25 @@ In counter-type ADC, a low signal on reset initiates the A/D conversion. As conv
 
 ### Design of 4 Bit BWR (Binary Weighted Resistor) type DAC
 
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157255307-2de4ddc0-0c17-49ff-9be2-38b43ebbb1c8.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:3 Circuit Diagram of BWR Type DAC</b></br>
+</p>
  
+# Schematic
+
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157256273-f21022e7-7a5b-474d-99fe-a16b08200b38.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:4 Schematic of Couter/Ramp Type ADC(Analog to Digital Converter)</b></br>
+</p>
+
