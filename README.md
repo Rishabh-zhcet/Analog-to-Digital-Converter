@@ -111,7 +111,7 @@ In counter-type ADC, a low signal on reset initiates the A/D conversion. As conv
 
 <p align="center" width="100%">
 
-   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157256273-f21022e7-7a5b-474d-99fe-a16b08200b38.png">
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/157297123-edc82c82-b07a-4c4f-8ab8-fc30cb06ee61.png">
    
 </p>
 
@@ -165,7 +165,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:5 4-Bit Counter Simulation on Makerchip Platform  </b></br>
 </p>
 
 # Project Simulation Plots
@@ -179,7 +179,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:6.1  Reset Signal Plot</b></br>
 </p>
 
 <p align="center" width="100%">
@@ -189,7 +189,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:6.2  Clock Signal Plot </b></br>
 </p>
 
 <p align="center" width="100%">
@@ -199,7 +199,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:6.3 Analog Input and Staircase Output </b></br>
 </p>
 
 <p align="center" width="100%">
@@ -209,7 +209,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:6.4 Digital Output From Counter</b></br>
 </p>
 
 
@@ -223,7 +223,7 @@ endmodule
 </p>
 
 <p align="center">
-<b>Fig:5 4 Bit Counter Simulation on Makerchip Platform  </b></br>
+<b>Fig:7 Complete ADC waveform Containing All the Signals </b></br>
 </p>
 
 # Generated Netlist
@@ -297,6 +297,17 @@ U14  gated_clk plot_v1
 
 # Reference
 
+[1] https://www.elprocus.com/counter-type-adc-analog-to-digitalconverter/
+
+[2] https://www.electronics-tutorial.net/analog-integrated-circuits/dataconverters/counter-type-adc/
+
 # Acknowledgment
 
+1. FOSSEE, IIT Bombay
+2. Steve Hoover, Founder, Redwood EDA
+3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+4. Sumanto Kar, eSim Team, FOSSEE
+
 # Author
+
+[Rishabh Verma](https://github.com/Rishabh-zhcet), B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
