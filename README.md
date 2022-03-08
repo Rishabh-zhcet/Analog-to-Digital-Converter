@@ -18,6 +18,7 @@ This repository presents the mixed signal design of a Counter Type/Ramp Type ADC
 * [Project Simulation Plots](#Project-Simulation-Plots)
    * [NgSpice Plot](#NgSpice-Plot)
    * [Gaw Plot](#Gaw-Plot)
+* [Explaination-Why taking negative polarity input](#Explaination-Why-taking-negative-polarity-input)
 * [Generated Netlist](#Generated-Netlist)
 * [Result](#Result)
 * [Generation of Counter Model using Ngveri Tab](#Generation-of-Counter-Model-using-Ngveri-Tab)
@@ -225,6 +226,10 @@ endmodule
 <p align="center">
 <b>Fig:7 Complete ADC waveform Containing All the Signals </b></br>
 </p>
+
+### Explaination-Why taking negative polarity input
+
+As we know that the output fromt the BWR DAC comes with negative polarity. So for comparision with the comparator, we have to apply the analog input voltage with the negative polarity. This is done for the simulation purpose. In physical circuit, we can connect input to the comparator with reversed polarity.
 
 # Generated Netlist
 
