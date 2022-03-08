@@ -227,7 +227,7 @@ endmodule
 <b>Fig:7 Complete ADC waveform Containing All the Signals </b></br>
 </p>
 
-### Explaination-Why taking negative polarity input
+### Explaination-Why taking negative polarity input?
 
 As we know that the output fromt the BWR DAC comes with negative polarity. So for comparision with the comparator, we have to apply the analog input voltage with the negative polarity. This is done for the simulation purpose. In physical circuit, we can connect input to the comparator with reversed polarity.
 
