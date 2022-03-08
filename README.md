@@ -66,3 +66,35 @@ It is a tool which converts Verilog code to C++ objects.
 
 For More Details Refer:
 https://www.veripool.org/verilator/
+
+# Refrence Circuit Diagram
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157244403-f671f3cb-c73f-40b5-b94b-fdc5db8d8e6f.png">
+   
+</p>
+
+<p align="center">
+<b>Fig:1 Reference Circuit of Counter Type/ Ramp Type</b></br>
+</p>
+
+# Expected Waveform
+
+<p align="center" width="100%">
+
+   <img width="50%" src="https://user-images.githubusercontent.com/65393666/157245675-5bc4f9ef-db2a-44a0-b419-90cc7cafa69b.jpg">
+   
+</p>
+
+<p align="center">
+<b>Fig:2 Reference waveform of 4-Bit Counter Type ADC</b></br>
+</p>
+
+# Methodology
+
+In counter-type ADC, a low signal on reset initiates the A/D conversion. As conversion begins, we get the digital equivalent output at the output of the counter The output of the counter is then applied to a DAC(Digital to Analog Converter). Furthur the DAC output is compared with the applied analog input voltage. The output of this comparator controls the clock signal of the counter. As long as the applied analog signal is greater than the DAC output, the output of the comparator remains High and the counter is incremented. A time is reached when the DAC output becomes greater than the applied voltage by a threshold voltage VT then the output of the comparator becomes Low and the clock to the counter is disabled. At this time the digital signal available on the output of the counter is the digital equivalent of applied analog input voltage. So as we need to design a DAC which is the internal part of this ADC.
+
+### Design of 4 Bit BWR (Binary Weighted Resistor) type DAC
+
+ 
